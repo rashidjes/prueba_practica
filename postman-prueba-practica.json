@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "1a1cfd45-5dc0-4be0-af29-5ee12725461e",
+		"name": "prueba_practica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "obtener-activos-fijos-por-tipo-activo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/spring-boot-prueba-practica-0.0.1-SNAPSHOT/api/obtener-activos-fijos-por-tipo-activo/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"spring-boot-prueba-practica-0.0.1-SNAPSHOT",
+						"api",
+						"obtener-activos-fijos-por-tipo-activo",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener-activos-fijos-por-id-activo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/spring-boot-prueba-practica-0.0.1-SNAPSHOT/api/obtener-activo-fijo-por-id-activo/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"spring-boot-prueba-practica-0.0.1-SNAPSHOT",
+						"api",
+						"obtener-activo-fijo-por-id-activo",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener-activos-fijos-por-serial",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/spring-boot-prueba-practica-0.0.1-SNAPSHOT/api/obtener-activos-fijos-por-serial/M9383K",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"spring-boot-prueba-practica-0.0.1-SNAPSHOT",
+						"api",
+						"obtener-activos-fijos-por-serial",
+						"M9383K"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener-activos-fijos-por-fecha-compra",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/spring-boot-prueba-practica-0.0.1-SNAPSHOT/api/obtener-activos-fijos-por-fecha-compra/2021-02-15 00:00:00",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"spring-boot-prueba-practica-0.0.1-SNAPSHOT",
+						"api",
+						"obtener-activos-fijos-por-fecha-compra",
+						"2021-02-15 00:00:00"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear-activo-fijo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Computador Toshiba\",\r\n    \"descripcion\": \"Este es un portátil toshiba\",\r\n    \"tipoActivoBO\": {\r\n        \"idTipoActivo\": 3\r\n    },\r\n    \"serial\": \"T101TC\",\r\n    \"numeroInterno\": 13711,\r\n    \"peso\": 10,\r\n    \"alto\": 15,\r\n    \"ancho\": 50,\r\n    \"largo\": 65,\r\n    \"valorCompra\": 2000000,\r\n    \"fechaCompra\": \"2021-04-26\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/spring-boot-prueba-practica-0.0.1-SNAPSHOT/api/guardar-activo-fijo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"spring-boot-prueba-practica-0.0.1-SNAPSHOT",
+						"api",
+						"guardar-activo-fijo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "obtener-todos-tipos-activos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/spring-boot-prueba-practica-0.0.1-SNAPSHOT/api/obtener-todos-tipos-activos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"spring-boot-prueba-practica-0.0.1-SNAPSHOT",
+						"api",
+						"obtener-todos-tipos-activos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
